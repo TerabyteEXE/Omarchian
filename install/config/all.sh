@@ -6,7 +6,7 @@
 mkdir -p "$HOME/.config"
 
 for app in hypr waybar fuzzel mako alacritty omarchian; do
-  if [[ -d "$OMARCHIAN_PATH/config/$app" ]]; then
+  if [[ -d "$(config_root)/$app" ]]; then
     link_config "$app"
   fi
 done

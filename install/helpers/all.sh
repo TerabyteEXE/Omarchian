@@ -61,10 +61,18 @@ install_packages() {
   fi
 }
 
+config_root() {
+  local root="$OMARCHIAN_PATH/config"
+  if [[ -d "$root/config" ]]; then
+    root="$root/config"
+  fi
+  printf '%s\n' "$root"
+}
+
 # Symlink a config directory from the repo into ~/.config, backing up
 # anything that's already there instead of clobbering it.
 link_config() {
-  local src="$OMARCHIAN_PATH/config/$1"
+  local src="$(config_root)/$1"
   local dest="$HOME/.config/$1"
   if [[ -e "$dest" && ! -L "$dest" ]]; then
     mv "$dest" "$dest.bak.$(date +%Y%m%d-%H%M%S)"

@@ -33,6 +33,7 @@ install_packages \
   waybar \
   fuzzel \
   mako-notifier \
+  nautilus \
   grim slurp swappy \
   brightnessctl playerctl \
   pavucontrol

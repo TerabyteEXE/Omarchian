@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Omarchian installer — bring Omarchy's look and keyboard-driven workflow to Debian.
-# Usage: bash <(curl -fsSL https://raw.githubusercontent.com/<you>/omarchian/main/boot.sh)
+# Usage: bash <(curl -fsSL https://raw.githubusercontent.com/TerabyteEXE/Omarchian/main/boot.sh)
 #    or: git clone <repo> ~/.local/share/omarchian && cd ~/.local/share/omarchian && ./install.sh
 
 set -euo pipefail

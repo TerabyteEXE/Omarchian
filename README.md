@@ -31,13 +31,13 @@ Simple: copy and paste one terminal command to install it — just like Omakub d
 On a fresh **Debian 13 (trixie)** install (sid/forky also work):
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/<you>/omarchian/main/boot.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/TerabyteEXE/Omarchian/main/boot.sh)
 ```
 
 Or, cloning it yourself:
 
 ```bash
-git clone https://github.com/<you>/omarchian.git ~/.local/share/omarchian
+git clone https://github.com/TerabyteEXE/Omarchian.git ~/.local/share/omarchian
 cd ~/.local/share/omarchian
 ./install.sh
 ```

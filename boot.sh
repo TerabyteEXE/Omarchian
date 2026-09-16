@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 # Fetches Omarchian and hands off to install.sh.
-# Usage: bash <(curl -fsSL https://raw.githubusercontent.com/<you>/omarchian/main/boot.sh)
+# Usage: bash <(curl -fsSL https://raw.githubusercontent.com/TerabyteEXE/Omarchian/main/boot.sh)
 
 set -euo pipefail
 
 OMARCHIAN_PATH="${OMARCHIAN_PATH:-$HOME/.local/share/omarchian}"
-OMARCHIAN_REPO="${OMARCHIAN_REPO:-https://github.com/<you>/omarchian.git}"
+OMARCHIAN_REPO="${OMARCHIAN_REPO:-https://github.com/TerabyteEXE/Omarchian.git}"
 OMARCHIAN_REF="${OMARCHIAN_REF:-main}"
 
 if ! command -v git &>/dev/null; then
